@@ -22,7 +22,7 @@ Ensure the following are installed:
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/kumar-gopal/TO-DO-ASSIGNMENT
    cd TO-DO
    ```
 
@@ -69,7 +69,7 @@ TO-DO/
 
 #### Register User
 
-- **POST** `/api/users/register`
+- **POST** `/api/v1/users/register`
 - **Request Body:**
   ```json
   {
@@ -88,7 +88,7 @@ TO-DO/
 
 #### Login User
 
-- **POST** `/api/users/login`
+- **POST** `/api/v1/users/login`
 - **Request Body:**
   ```json
   {
@@ -109,12 +109,10 @@ TO-DO/
 
 #### Create Task
 
-- **POST** `/api/tasks`
+- **POST** `/api/v1/tasks`
 - **Headers:**
-  ```json
-  {
-    "Authorization": "Bearer <JWT token>"
-  }
+  ```plaintext
+  Authorization: Bearer <JWT token>
   ```
 - **Request Body:**
   ```json
@@ -133,12 +131,10 @@ TO-DO/
 
 #### Get All Tasks
 
-- **GET** `/api/tasks`
+- **GET** `/api/v1/tasks`
 - **Headers:**
-  ```json
-  {
-    "Authorization": "Bearer <JWT token>"
-  }
+  ```plaintext
+  Authorization: Bearer <JWT token>
   ```
 - **Response:**
   ```json
@@ -156,12 +152,10 @@ TO-DO/
 
 #### Get Task by ID
 
-- **GET** `/api/tasks/:id`
+- **GET** `/api/v1/tasks/:id`
 - **Headers:**
-  ```json
-  {
-    "Authorization": "Bearer <JWT token>"
-  }
+  ```plaintext
+  Authorization: Bearer <JWT token>
   ```
 - **Response:**
   ```json
@@ -177,12 +171,10 @@ TO-DO/
 
 #### Update Task
 
-- **PUT** `/api/tasks/:id`
+- **PUT** `/api/v1/tasks/:id`
 - **Headers:**
-  ```json
-  {
-    "Authorization": "Bearer <JWT token>"
-  }
+  ```plaintext
+  Authorization: Bearer <JWT token>
   ```
 - **Request Body:**
   ```json
@@ -200,12 +192,10 @@ TO-DO/
 
 #### Delete Task
 
-- **DELETE** `/api/tasks/:id`
+- **DELETE** `/api/v1/tasks/:id`
 - **Headers:**
-  ```json
-  {
-    "Authorization": "Bearer <JWT token>"
-  }
+  ```plaintext
+  Authorization: Bearer <JWT token>
   ```
 - **Response:**
   ```json
