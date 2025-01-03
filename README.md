@@ -1,4 +1,4 @@
-# TO-DO Application
+# TO-DO Application 
 
 This TO-DO application provides a robust solution for managing tasks efficiently. Built with Node.js, it features user authentication, secure data handling, and CRUD operations for task management.
 
